@@ -15,7 +15,7 @@
 
 ```python
 from sklearn.decomposition import PCA
-pca = PCA(n_compoents = "choose optimal nbr of components")
+pca = PCA(n_components = "choose optimal nbr of components")
 X_train = pca.fit_transform(X_train)
 X_test = pca.transform(X_test)
 ```
