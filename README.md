@@ -8,6 +8,6 @@
 - A good analysis of UCIML wine dataset applying PCA with 2 components and building a Logistic Regression classifier.
   - [**Classifier**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/PCA.py)
 - **Visualising the Train set**
-  - ![**TrainedVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/trainvisuals.png)
+  ![**TrainedVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/trainvisuals.png)
 - **Visualizing the Test set**
-  - ![**TestVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/testvisuals.png)
+  ![**TestVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/testvisuals.png)
