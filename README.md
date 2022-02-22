@@ -11,11 +11,11 @@
   | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
   | ![**TrainedVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/trainvisuals.png) | ![**TestVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/testvisuals.png) |
 
-- In this type of algorithms we could try multiply number of components if we see that the model underperforms to get the optimal number of features. In our example only two features where required.
+- In this type of algorithms we could try multiple number of components starting at 2, if we see that the model underperforms to get the optimal number of features.
 
 ```python
 from sklearn.decomposition import PCA
 pca = PCA(n_components = "customize nbr_components")
-X_train = pca.fit_transform(X_train)
-X_test = pca.transform(X_test)
+df_trainset = pca.fit_transform(df_trainset)
+df_testset = pca.transform(df_testset)
 ```
