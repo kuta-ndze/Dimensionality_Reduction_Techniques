@@ -6,7 +6,7 @@
 - Unlike linear regression it attempts to learn the relationship between X and Y values quantified by finding a list of principal axes.
 - PCA can be highly affected by outliers in the data.
 - A good analysis of UCIML wine dataset applying PCA with 2 components and building a Logistic Regression classifier.
-  - [**Classifier**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/PCA.py)
+  - [**PCAclassifier**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/PCA.py)
 - |                                             **Visualising the Train set**                                              |                                            **Visualizing the Test set**                                            |
   | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
   | ![**TrainedVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/trainvisuals.png) | ![**TestVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/PCA/testvisuals.png) |
@@ -21,3 +21,13 @@ X_test = pca.transform(X_test)
 ```
 
 ![#0f3fff](https://via.placeholder.com/15/0f3fff/000000?text=+) **`Linear Discriminant Analaysis (LDA)`**
+
+- LDA differs from PCA in that in addition to finding the component axises, we are interested in the axes that maximize the separation between multiple classes.
+- Both are all linear transformation techniques use for dimensionality reduction.
+- PCA is described as unsupervised but LDA is supervised because of the relation to the dependent variable.
+- The goal of LDA is to project feature space ( a dataset of n-dimensional samples) onto a small subspace k(where k <= n-1) while maintaining the class-discriminatory information.
+- Five steps method for the algorithm as well. The application of LDA before the classifier below.
+  - [**LDAclassifier**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/LDA/LDA.py)
+- |                                           **Visualising the Train set**                                            |                                          **Visualizing the Test set**                                          |
+  | :----------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+  | ![**TrainedVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/LDA/trainset.png) | ![**TestVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/LDA/testset.png) |
