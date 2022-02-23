@@ -19,3 +19,5 @@ pca = PCA(n_components = "choose optimal nbr of components")
 X_train = pca.fit_transform(X_train)
 X_test = pca.transform(X_test)
 ```
+
+![#0f3fff](https://via.placeholder.com/15/0f3fff/000000?text=+) **`Linear Discriminant Analaysis (LDA)`**
