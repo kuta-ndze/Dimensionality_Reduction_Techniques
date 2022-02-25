@@ -50,7 +50,7 @@ X_test = lda.transform(X_test)
     | **Visualising the Train set** | **Visualizing the Test set** |
     | :----------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
     | ![**TrainedVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/KernelPCA/trainset.png) | ![**TestVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/KernelPCA/testset.png) |
-- Only minor changes in the implemention of KernelPCA
+- The implemention of KernelPCA
 
 ```python
 from sklearn.decomposition import KernelPCA
