@@ -41,3 +41,20 @@ lda = LDA(n_components = 2)
 X_train = lda.fit_transform(X_train, y_train)
 X_test = lda.transform(X_test)
 ```
+
+![#fc51ff](https://via.placeholder.com/15/fc51ff/000000?text=+) **`Kernel Principal Component Analysis`**
+
+- The Kernal PCA in most cases will always outperform the normal PCA.
+- We have applied KernelPCA to the UCIML Wine dataset
+  - [**KernelPCAclassifier**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/KernelPCA/KernelPCA.py)
+    | **Visualising the Train set** | **Visualizing the Test set** |
+    | :----------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+    | ![**TrainedVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/KernelPCA/trainset.png) | ![**TestVisuals**](https://github.com/kuta-ndze/Dimensionality_Reduction_Techniques/blob/main/KernelPCA/testset.png) |
+- Only minor changes in the implemention of KernelPCA
+
+```python
+from sklearn.decomposition import KernelPCA
+kpca = KernelPCA(n_components = 2, kernel = 'rbf')  #radial base function
+X_train = kpca.fit_transform(X_train)
+X_test = kpca.transform(X_test)
+```
